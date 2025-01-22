@@ -10,7 +10,7 @@ int binary_search(const int *array, const size_t size, const int target)
         if (target == array[mid])
             return mid;
         else if (array[mid] < target)
-            start = mid;
+            start = mid + 1;
         else
             end = mid - 1;
     }
